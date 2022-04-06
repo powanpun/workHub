@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginsignup.RegisterActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:text="Create Account"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <androidx.core.widget.ContentLoadingProgressBar
+            android:id="@+id/progbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:indeterminate="true"
+            android:progressTint="@color/orange"
+            android:secondaryProgressTint="@color/orange"
+            android:visibility="gone" />
+        <com.google.android.material.card.MaterialCardView
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:textColor="@color/black"
+                android:hint="business name"
+                android:id="@+id/fullnam"
+                android:padding="16dp"
+                android:fontFamily="sans-serif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray" />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <EditText
+                    android:textColor="@color/black"
+                    android:hint="email"
+                    android:id="@+id/email"
+                    android:padding="16dp"
+                    android:fontFamily="sans-serif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+       <com.google.android.material.card.MaterialCardView
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <EditText
+                    android:textColor="@color/black"
+                    android:hint="contact number"
+                    android:id="@+id/contactnum"
+                    android:padding="16dp"
+                    android:inputType="number"
+                    android:fontFamily="sans-serif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+  <com.google.android.material.card.MaterialCardView
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <EditText
+                    android:textColor="@color/black"
+                    android:hint="password"
+                    android:id="@+id/pass"
+                    android:padding="16dp"
+                    android:inputType="textPassword"
+                    android:fontFamily="sans-serif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+
+  <com.google.android.material.card.MaterialCardView
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <EditText
+                    android:textColor="@color/black"
+                    android:hint="confirm password"
+                    android:id="@+id/confpass"
+                    android:padding="16dp"
+                    android:inputType="textPassword"
+                    android:fontFamily="sans-serif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+        <Button
+            android:id="@+id/signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Sign up"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:backgroundTint="#FD8204" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+

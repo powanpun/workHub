@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+<item android:id="@+id/menuHom"
+    android:title="Home"
+    android:icon="@drawable/download"/>
+
+    <item android:id="@+id/menuPo"
+        android:title="Posts"
+        android:icon="@drawable/post"/>
+
+    <item android:id="@+id/menuChat"
+        android:title="Chats"
+        android:icon="@drawable/chat"/>
+
+    <item android:id="@+id/menuPunch"
+        android:title="Punch Clock"
+        android:icon="@drawable/punch"/>
+
+
+
+    <item android:id="@+id/menuS"
+        android:title="Schedule"
+        android:icon="@drawable/schedule"/>
+
+
+    <item android:title="Shift Offer"
+        android:id="@+id/menuShift"
+        android:icon="@drawable/shifoff"/>
+
+
+    <item android:title="Others"
+        >
+
+        <menu>
+    <item android:title="Help"
+        android:id="@+id/menuHelp"
+        android:icon="@drawable/help"/>
+
+    <item android:title="Logout"
+        android:id="@+id/menuLogout"
+        android:icon="@drawable/logout"/>
+        </menu>
+
+    </item>
+</menu>

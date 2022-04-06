@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    android:id="@+id/mcvSingleEmployee"
+    android:theme="@style/Theme.MaterialComponents.Light"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="4dp"
+    android:padding="4dp"
+    android:background="@color/gray"
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/ivEmployee"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/person"/>
+
+
+    <View
+        android:id="@+id/barrier"
+        android:background="@color/orange"
+        app:layout_constraintTop_toTopOf="@id/ll"
+        app:layout_constraintBottom_toBottomOf="@id/ll"
+        app:layout_constraintStart_toEndOf="@id/ivEmployee"
+        app:layout_constraintEnd_toStartOf="@+id/ll"
+        android:layout_width="0.5dp"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/ll"
+
+        android:layout_marginStart="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/ivEmployee"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            app:layout_constraintStart_toEndOf="@+id/barrier"
+            app:layout_constraintBottom_toTopOf="@+id/itemEmployeePost"
+            android:id="@+id/itemEmployeeName"
+            android:layout_width="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="asdasdas"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            app:layout_constraintStart_toEndOf="@+id/ivEmployee"
+            app:layout_constraintBottom_toBottomOf="@+id/ivEmployee"
+            android:id="@+id/itemEmployeePost"
+            android:layout_width="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="asdasdas"
+            android:textSize="14sp"
+            android:layout_height="wrap_content"/>
+        <TextView
+
+            android:id="@+id/itemEmployeeEmail"
+            android:layout_width="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="asdasdas"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/itemEmployeePhn"
+            android:layout_width="wrap_content"
+            android:fontFamily="sans-seri"
+            android:text="asdasdas"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
